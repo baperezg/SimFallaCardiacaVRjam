@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Scene
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 15
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 374
     height: 573
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -150,7 +150,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -223,10 +223,10 @@ MonoBehaviour:
     y: 0
     width: 1509
     height: 947
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 16
+  controlID: 36
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,10 +248,10 @@ MonoBehaviour:
     y: 0
     width: 1509
     height: 573
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 17
+  controlID: 37
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -343,22 +343,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Characters/Doctor
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Characters/Doctor
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Unity Projects\SimFallaCardiacaVRJam
+  m_LastProjectPath: C:\Unity Projects\Simulador de Falla Cardiaca\SimFallaCardiacaVRjam\SimFallaCardiacaVRjam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ea490000
-    m_LastClickedID: 18922
-    m_ExpandedIDs: 00000000e84900001ea3000000ca9a3b
+    m_SelectedIDs: ca460000
+    m_LastClickedID: 18122
+    m_ExpandedIDs: 000000007640000078400000cc46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000007640000078400000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -507,23 +507,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 440cffff2e0fffff187dffff8a7fffff6a97ffff009bffff6e9ffffff2a2fffff4a2ffff22ccffff2eccffff30ccffffc6ceffff88d1ffffa2dfffff5ae3ffff8ae3ffff86faffff18a50000d6a70000f8ac000038ad00004ead00008ab00000d2b70000f2bf000044c3000040c9000060d10000b2d40000
+      m_SelectedIDs: fe3c0000
+      m_LastClickedID: 15614
+      m_ExpandedIDs: 50fbffff143d0000523d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Equiposlab
-        m_OriginalName: Equiposlab
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -63454
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -569,9 +569,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.7715418, y: -0.5510757, z: 3.5035095}
+    m_Target: {x: -0.5859078, y: 1.7270466, z: 0.18613143}
     speed: 2
-    m_Value: {x: 1.7715418, y: -0.5510757, z: 3.5035095}
+    m_Value: {x: -0.5859078, y: 1.7270466, z: 0.18613143}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -618,13 +618,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.28116375, y: -0.044310614, z: 0.012979706, w: 0.9585804}
+    m_Target: {x: 0.1453343, y: -0.1956918, z: 0.029343838, w: 0.96943724}
     speed: 2
-    m_Value: {x: 0.2796973, y: -0.045767087, z: 0.013332382, w: 0.9589041}
+    m_Value: {x: 0.14387374, y: -0.19572708, z: 0.029048953, w: 0.96961194}
   m_Size:
-    m_Target: 6.241322
+    m_Target: 1.4122822
     speed: 2
-    m_Value: 6.241322
+    m_Value: 1.4122822
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -697,8 +697,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -566.5
     m_HBaseRangeMax: 566.5
-    m_VBaseRangeMin: -265.5
-    m_VBaseRangeMax: 265.5
+    m_VBaseRangeMin: -276
+    m_VBaseRangeMax: 276
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -715,11 +715,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1133
-      height: 531
+      height: 552
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 566.5, y: 265.5}
+    m_Translation: {x: 566.5, y: 276}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -727,9 +727,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -566.5
-      y: -265.5
+      y: -276
       width: 1133
-      height: 531
+      height: 552
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1133, y: 552}
