@@ -5,12 +5,14 @@ using UnityEngine.XR;
 
 public class HandPresence : MonoBehaviour
 {
+    public List<GameObject> controllerPrefabs;
     private InputDevice targetDevice;
+    private GameObject spawnedController;
 
     // Start is called before the first frame update
     void Start()
     {
-        List<InputDevice> devices = new List<InputDevice>();
+        List<InputDevice> devices = new List<InputDevice>();       
         InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
         InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
 
@@ -22,6 +24,16 @@ public class HandPresence : MonoBehaviour
         if(devices.Count > 0)
         {
             targetDevice = devices[0];
+            GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
+            if (prefab)
+            {
+                Instantiate(prefab, transform);
+            }
+            else
+            {
+                Debug.LogError("Objeto no corresponde al controller model");
+                spawnedController = Instantiate(controllerPrefabs[0], transform);
+            }
         }
     }
 
