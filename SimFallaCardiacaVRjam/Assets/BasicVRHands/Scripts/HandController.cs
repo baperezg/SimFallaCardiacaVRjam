@@ -12,31 +12,39 @@ public class HandController : MonoBehaviour {
 
 	void Start () {
         animator = GetComponent<Animator>();
-		devices = new List<InputDevice>();
-		InputDevices.GetDevices(devices);
 
-		foreach(var item in devices)
-        {
+		List<InputDevice> devices = new List<InputDevice>();
+		InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+		InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+
+		foreach (var item in devices)
+		{
 			Debug.Log(item.name + item.characteristics);
-			
-        }
+		}
+
+		if (devices.Count > 0)
+		{
+			targetDevice = devices[0];
+		}
 	}
 	
 	void Update () {
-		targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
-		//Debug.Log("Botón primario: "+primaryButtonValue);
-		if (primaryButtonValue == true)
-        {
+		if (targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue) && primaryButtonValue)
 			animator.SetBool("isGrabbing", true);
-		}
+		else
+			animator.SetBool("isGrabbing", false);
 
-		targetDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool gripButtonValue);
-		if (gripButtonValue == true)
-		{
+		if (targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue) && triggerValue > 0.1f)
 			animator.SetBool("isGrabbing", true);
-		}
+		else
+			animator.SetBool("isGrabbing", false);
 
-		
+		if (targetDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool gripButtonValue) && gripButtonValue)
+			animator.SetBool("isGrabbing", true);
+		else
+			animator.SetBool("isGrabbing", false);
+
+
 
 
 		//animator.SetBool("isGrabbing", Input.GetKey(KeyCode.F));
