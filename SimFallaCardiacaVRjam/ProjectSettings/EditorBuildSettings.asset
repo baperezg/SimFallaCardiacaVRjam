@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Consultorio.unity
     guid: 41caea7f1c63cc5449226aea87fcd5d6
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 07fae0a28eb901e40980b56191fa67c3, type: 2}
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4c7f7b2c4ee5a3240aaa2c1bd707de0e, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 75dbc00b416dc054db18188373607ebb, type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ec810aa487fabb24d855cd410de6dbb2, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: eb2d5395145f35841b68780624cc519c, type: 2}
