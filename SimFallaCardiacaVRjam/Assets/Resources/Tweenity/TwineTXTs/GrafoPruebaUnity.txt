@@ -1,0 +1,50 @@
+﻿:: StoryTitle
+GrafoPruebaUnity
+
+:: UserScript[script]
+
+
+:: UserStylesheet[stylesheet]
+
+
+:: Iniciar simulación[start dialogue]
+El doctor (jugador) se encuentra sentado en una silla detras del escritorio, saluda al paciente diciendo: Buenos días, por favor tome asiento. ¿Còmo se encuentra el día de hoy?
+El paciente se encuentra sentado frente al doctor y responde: Buen días doctor, ultimamente he sentido fatiga al caminar y dolor en el pecho.
+
+En la misma silla el doctor le pregunta al paciente: ¿Ha sufrido de hipertensiòn o infarto de miiocardio?
+
+El sistema automaticamente selecciona una de las variables y la muestra en la pantalla como parte del dialogo del paciente
+El jugador ahora debe seleccionar la acciòn a seguir
+@
+[[BtnExamenFisico.Pressed():Hacer examen fisico]]
+[[BtnSaludable.Pressed():Informar que todo esta bien]]
+{
+BtnExamenFisico.Pressed()
+BtnSaludable.Pressed()
+}
+<
+Simulator.InitializeAudioDirectory("Audios")
+Simulator.Play("1.DoctorSaludo.mp3")
+Simulator.Play("2.PacienteSaludo.mp3")
+Simulator.Play("3.DoctorPregunta.mp3")
+Simulator.Play("4.PacienteInfartomp3")
+>
+
+
+:: BtnExamenFisico.Pressed():Hacer examen fisico[end]
+El doctor le dice al paciente que camine hasta la camilla para el examen fisico.
+El paciente se siente en la camilla y luego se acuesta.
+El doctor dice: "Vamos a la camilla para escuchar su corazón"
+@
+{}
+<
+Simulator.play("5.DoctorVamosCamilla.mp3")
+>
+
+:: BtnSaludable.Pressed():Informar que todo esta bien[end]
+El sistema muestra un mensaje diciendole al jugador: No es posible que el paciente este bien porque tiene dolencias ya antecedes posibles a una falla cardiaca
+@
+<
+Simulator.play("SimuladorFinError.mp3")
+>
+

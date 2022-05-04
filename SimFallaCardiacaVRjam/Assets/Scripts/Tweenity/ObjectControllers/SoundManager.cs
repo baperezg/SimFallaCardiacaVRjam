@@ -7,11 +7,14 @@ using System;
 public class SoundManager : MonoBehaviour
 {
     public static AudioClip phoneRing, ansCall, alarmaCM, zafarranchoIncendio, wrongAnswer;
+    public static AudioClip saludoDoc, saludoPac;
     static AudioSource audioSource;
 
     //Se inicializan los sonidos usando variables AudioClip y los audios guardados en Resources/audios/
     void Awake()
     {
+        saludoDoc = Resources.Load<AudioClip>("Audio/1.DoctorSaludo");
+        saludoPac = Resources.Load<AudioClip>("Audio/2.PacienteSaludo");
         phoneRing = Resources.Load<AudioClip>("Audio/phone-ring");
         //ansCall = Resources.Load<AudioClip>("Audio/beep_call");
         zafarranchoIncendio = Resources.Load<AudioClip>("Audio/zafarranchoIncendio");
@@ -30,6 +33,9 @@ public class SoundManager : MonoBehaviour
         
         switch (clip)
         {
+            case "saludoDoc":
+                audioSource.PlayOneShot(saludoDoc);
+                break;
             case "phoneRing":
                 audioSource.loop = true;
                 audioSource.clip = (phoneRing);

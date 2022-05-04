@@ -174,7 +174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.872, y: 1.579}
+  m_AnchoredPosition: {x: -6.8720093, y: 1.57901}
   m_SizeDelta: {x: 0.991014, y: 0.71249306}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1114673979577328261
@@ -251,8 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentOfResponses: {fileID: 1114673980278246974}
-  prefab_btnResponse: {fileID: 4185262680479986239, guid: 31d3bb802bd27494a8f61a26f1e72ae8,
-    type: 3}
+  prefab_btnResponse: {fileID: 4185262680479986239, guid: 31d3bb802bd27494a8f61a26f1e72ae8, type: 3}
   txtNodeDisplay: {fileID: 1114673979202348885}
   controller: {fileID: 0}
   audioActivation: 0
