@@ -44,13 +44,19 @@ public class Personaje : MonoBehaviour
         
         switch (animationName)
         {
-            case "Saludar":
-                anim.SetBool("salute", true);
+            case "sentarse":
+                anim.SetBool("sentarse", true);
+                anim.SetBool("saludar", false);
+                break;                  
+            case "saludar":
+                anim.SetBool("saludar", true);
+                anim.SetBool("sentarse", false);
                 break;
-            case "Idle":
+            case "idle":
                 //Poner las animaciones en false
                 // pueden crear su propio sistema también
-                anim.SetBool("salute", false);
+                anim.SetBool("sentarse", false);
+                anim.SetBool("saludar", false);
 
                 delay = 500;
                 break;
@@ -60,6 +66,7 @@ public class Personaje : MonoBehaviour
         {
             //delay = (int.Parse(""+ Convert.ToInt32(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length*1000)));
             delay = (int.Parse(""+ Convert.ToInt32(DarTiempoClip(animationName.ToString())*1000)));
+            anim.SetBool("idle", true);
         }
         
         return delay;
@@ -70,8 +77,11 @@ public class Personaje : MonoBehaviour
         float delay = 0;
         switch (clipName)
         {
-            case "Saludar":
-                delay = 2.83f;
+            case "sentarse":
+                delay = 1f;
+                break;
+            case "saludar":
+                delay = 1f;
                 break;
             case "Idle":
                 delay = 1;

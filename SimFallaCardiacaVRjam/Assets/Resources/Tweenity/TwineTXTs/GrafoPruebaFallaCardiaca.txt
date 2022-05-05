@@ -22,11 +22,11 @@ El jugador ahora debe seleccionar la acciòn a seguir
 Simulator.InitializeAudiosDirectory("fallacardiaca")
 Simulator.Wait(2)
 Simulator.Play("1-DoctorSaludo")
-Simulator.MoveCharacter("PacienteController";"PathIrCamilla")
+PacienteController.PlayAnimation("saludar")
+PacienteController.PlayAnimation("sentarse")
 Simulator.Play("2-PacienteSaludo")
 Simulator.Play("3-DoctorPregunta")
 Simulator.Play("4-PacienteInfarto")
-
 >
 
 
@@ -38,7 +38,12 @@ El doctor dice: "Vamos a la camilla para escuchar su corazón"
 [[X]]
 {}
 <
-Simulator.PlayVoice("5-DoctorVamosCamilla")
+Simulator.Wait(2)
+PacienteController.PlayAnimation("idle")
+Simulator.Play("5-DoctorVamosCamilla")
+PacienteController.MirarJugador(false)
+Simulator.MoveCharacter("Paciente";"PathIrCamilla")
+PacienteController.MirarJugador(true)
 Simulator.CloseDialogueViewer()
 >
 
