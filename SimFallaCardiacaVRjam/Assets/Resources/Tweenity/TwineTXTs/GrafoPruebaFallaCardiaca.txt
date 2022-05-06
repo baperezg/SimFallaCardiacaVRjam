@@ -31,12 +31,12 @@ Simulator.Play("4-PacienteInfarto")
 >
 
 
-:: Hacer examen fisico[end]
+:: Hacer examen fisico
 El doctor le dice al paciente que camine hasta la camilla para el examen fisico.
 El paciente se sienta en la camilla y luego se acuesta.
 El doctor dice: "Vamos a la camilla para escuchar su corazón"
 @
-[[X]]
+[[Hacer examen de sangre]]
 {}
 <
 Simulator.Wait(2)
@@ -48,6 +48,22 @@ Simulator.Wait(2)
 Simulator.MoveCharacter("Paciente";"PathIrCamilla")
 Simulator.Wait(3)
 PacienteController.MirarJugador(true)
-Simulator.CloseDialogueViewer()
+Simulator.Wait(5)
 >
 
+
+:: Hacer examen de sangre[end]
+El doctor le dice al paciente que camine hasta la camilla para el examen fisico.
+@
+[[X]]
+{}
+<
+Simulator.Wait(2)
+PacienteController.MirarJugador(false)
+Simulator.MoveCharacter("Paciente";"PathIrConsultorioDesdeCamilla")
+Simulator.Wait(3)
+Simulator.MoveCharacter("Paciente";"PathIrLabDesdeConsultorio")
+Simulator.Wait(3)
+PacienteController.MirarJugador(true)
+Simulator.CloseDialogueViewer()
+>
