@@ -19,10 +19,11 @@ El jugador ahora debe seleccionar la acciòn a seguir
 [[Hacer examen fisico]]
 {}
 <
+Simulator.Wait(3)
 Simulator.InitializeAudiosDirectory("fallacardiaca")
-Simulator.Wait(2)
 Simulator.Play("1-DoctorSaludo")
 PacienteController.PlayAnimation("saludar")
+sillapaciente.PlayAnimation("sillaadelante")
 PacienteController.PlayAnimation("sentarse")
 Simulator.Play("2-PacienteSaludo")
 Simulator.Play("3-DoctorPregunta")
@@ -32,17 +33,20 @@ Simulator.Play("4-PacienteInfarto")
 
 :: Hacer examen fisico[end]
 El doctor le dice al paciente que camine hasta la camilla para el examen fisico.
-El paciente se siente en la camilla y luego se acuesta.
+El paciente se sienta en la camilla y luego se acuesta.
 El doctor dice: "Vamos a la camilla para escuchar su corazón"
 @
 [[X]]
 {}
 <
 Simulator.Wait(2)
-PacienteController.PlayAnimation("idle")
-Simulator.Play("5-DoctorVamosCamilla")
 PacienteController.MirarJugador(false)
+Simulator.Play("5-DoctorVamosCamilla")
+sillapaciente.PlayAnimation("sillaatras")
+PacienteController.PlayAnimation("idle")
+Simulator.Wait(2)
 Simulator.MoveCharacter("Paciente";"PathIrCamilla")
+Simulator.Wait(3)
 PacienteController.MirarJugador(true)
 Simulator.CloseDialogueViewer()
 >

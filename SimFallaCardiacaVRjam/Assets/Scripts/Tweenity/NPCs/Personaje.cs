@@ -57,7 +57,6 @@ public class Personaje : MonoBehaviour
                 // pueden crear su propio sistema también
                 anim.SetBool("sentarse", false);
                 anim.SetBool("saludar", false);
-
                 delay = 500;
                 break;
         }
@@ -80,9 +79,11 @@ public class Personaje : MonoBehaviour
             case "sentarse":
                 delay = 1f;
                 break;
+
             case "saludar":
-                delay = 1f;
+                delay = 2.5f;
                 break;
+
             case "Idle":
                 delay = 1;
                 break;

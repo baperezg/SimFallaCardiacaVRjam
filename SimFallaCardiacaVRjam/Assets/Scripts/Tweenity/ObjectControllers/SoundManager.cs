@@ -13,12 +13,12 @@ public class SoundManager : MonoBehaviour
     //Se inicializan los sonidos usando variables AudioClip y los audios guardados en Resources/audios/
     void Awake()
     {
-        saludoDoc = Resources.Load<AudioClip>("Audio/1.DoctorSaludo");
-        saludoPac = Resources.Load<AudioClip>("Audio/2.PacienteSaludo");
-        phoneRing = Resources.Load<AudioClip>("Audio/phone-ring");
+        //saludoDoc = Resources.Load<AudioClip>("Audio/1.DoctorSaludo");
+        //saludoPac = Resources.Load<AudioClip>("Audio/2.PacienteSaludo");
+        //phoneRing = Resources.Load<AudioClip>("Audio/phone-ring");
         //ansCall = Resources.Load<AudioClip>("Audio/beep_call");
-        zafarranchoIncendio = Resources.Load<AudioClip>("Audio/zafarranchoIncendio");
-        wrongAnswer = Resources.Load<AudioClip>("Audio/wrongAnswer");
+        //zafarranchoIncendio = Resources.Load<AudioClip>("Audio/zafarranchoIncendio");
+        //wrongAnswer = Resources.Load<AudioClip>("Audio/wrongAnswer");
 
         audioSource = GetComponent<AudioSource>();
     }

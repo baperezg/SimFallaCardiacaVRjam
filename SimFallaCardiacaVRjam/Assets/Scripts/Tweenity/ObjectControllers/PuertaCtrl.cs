@@ -12,11 +12,11 @@ public class PuertaCtrl : MonoBehaviour
     }
     public int PlayAnimation(string name)
     {
-        if(name=="open")
+        if (name == "open")
         {
             anim.SetBool("abrirPuerta", true);
         }
-        else if(name=="close")
+        else if (name == "close")
         {
             anim.SetBool("cerrarPuerta", true);
         }
