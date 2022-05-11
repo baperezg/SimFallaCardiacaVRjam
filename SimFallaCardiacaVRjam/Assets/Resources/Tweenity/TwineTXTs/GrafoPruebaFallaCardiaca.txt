@@ -49,6 +49,11 @@ Simulator.MoveCharacter("Paciente";"PathIrCamilla")
 Simulator.Wait(3)
 PacienteController.MirarJugador(true)
 Simulator.Wait(5)
+Simulator.Play("heartmitralregurgitation2")
+Simulator.Play("heartmitralregurgitation2")
+Simulator.Play("heartmitralregurgitation2")
+Simulator.Play("heartmitralregurgitation2")
+Simulator.Play("heartmitralregurgitation2")
 >
 
 

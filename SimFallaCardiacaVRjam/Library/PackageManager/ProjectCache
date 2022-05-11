@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637867006795538216
+      ticks: 637878980995994435
     m_Hash: 1645053563
   m_LockFileStatus:
     m_FilePath: C:/Unity Projects/Simulador de Falla Cardiaca/SimFallaCardiacaVRjam/SimFallaCardiacaVRjam/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637867006795617576
+      ticks: 637878980995999377
     m_Hash: 2023197913
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -78,6 +78,7 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -86,6 +87,7 @@ m_PackageAssets:
         - 1.15.13
         - 1.15.15
         - 1.15.16
+        - 1.15.17
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -110,6 +112,7 @@ m_PackageAssets:
         - 1.14.13
         - 1.14.15
         - 1.14.16
+        - 1.14.17
         - 1.15.1
         - 1.15.4
         - 1.15.7
@@ -118,6 +121,7 @@ m_PackageAssets:
         - 1.15.13
         - 1.15.15
         - 1.15.16
+        - 1.15.17
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -988,6 +992,7 @@ m_PackageAssets:
         - 2.0.0-pre.7
         - 2.0.0
         - 2.0.1
+        - 2.0.2
         compatible:
         - 0.0.6-preview
         - 0.9.0-preview
@@ -1008,6 +1013,7 @@ m_PackageAssets:
         - 2.0.0-pre.7
         - 2.0.0
         - 2.0.1
+        - 2.0.2
         verified: 
       dependencies:
       - name: com.unity.inputsystem
@@ -1402,6 +1408,7 @@ m_PackageAssets:
         - 2.9.0
         - 2.9.1
         - 2.9.2
+        - 2.9.3
         - 3.0.0
         - 3.0.1-preview.3
         - 3.0.1-preview.4
@@ -1424,6 +1431,7 @@ m_PackageAssets:
         - 4.6.0
         - 4.6.1
         - 4.6.2
+        - 4.6.3
         - 5.0.0
         - 5.1.0-exp.1
         - 5.1.0
@@ -1437,6 +1445,7 @@ m_PackageAssets:
         - 4.6.0
         - 4.6.1
         - 4.6.2
+        - 4.6.3
         verified: 4.5.0
       dependencies:
       - name: com.unity.modules.subsystems
