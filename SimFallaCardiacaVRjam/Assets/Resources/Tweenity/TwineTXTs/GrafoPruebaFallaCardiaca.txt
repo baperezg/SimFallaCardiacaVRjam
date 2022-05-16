@@ -48,7 +48,6 @@ PacienteController.PlayAnimation("idle")
 Simulator.Wait(2)
 Simulator.MoveCharacter("Paciente";"PathIrCamilla")
 Simulator.Wait(3)
-PacienteController.MirarJugador(true)
 Simulator.Wait(5)
 Simulator.Play("heartmitralregurgitation2")
 Simulator.Play("heartmitralregurgitation2")
@@ -68,12 +67,12 @@ El paciente se sienta en la camilla y luego se acuesta.
 PacienteController.MirarJugador(false)
 Simulator.Wait(2)
 Simulator.Play("6-Electrocardiograma")
-PacienteController.PlayAnimation("acostarse")
 Simulator.Wait(2)
+PacienteController.PlayAnimation("acostarse")
+Simulator.Wait(7)
+PacienteController.PlayAnimation("idle")
 Simulator.Play("7-examendesangre")
-Simulator.MoveCharacter("Paciente";"PathIrConsultorioDesdeCamilla")
-Simulator.Wait(3)
-Simulator.MoveCharacter("Paciente";"PathIrLabDesdeConsultorio")
+Simulator.MoveCharacter("Paciente";"PathIrLabDesdeCamilla")
 Simulator.Wait(3)
 PacienteController.MirarJugador(true)
 >
@@ -87,14 +86,11 @@ El doctor le dice al paciente que estire el brazo para tomarle una muestra de sa
 <
 Simulator.Wait(2)
 Simulator.Play("7-1-estirebrazo")
-Simulator.Wait(2)
+Simulator.Wait(5)
 Simulator.Play("8-ecocardiograma")
 PacienteController.MirarJugador(false)
-Simulator.MoveCharacter("Paciente";"PathIrConsultorioDesdeCamilla")
-Simulator.Wait(3)
-Simulator.MoveCharacter("Paciente";"PathIrLabDesdeConsultorio")
-Simulator.Wait(3)
-Simulator.Wait(3)
+Simulator.MoveCharacter("Paciente";"PathIrCamillaDesdeLab")
+Simulator.Wait(5)
 >
 
 
@@ -107,10 +103,9 @@ El paciente se sienta en la camilla y luego se acuesta.
 <
 Simulator.Wait(2)
 PacienteController.MirarJugador(false)
-Simulator.Play("6-Electrocardiograma")
 PacienteController.PlayAnimation("acostarse")
-Simulator.Wait(2)
-Simulator.Play("7-examendesangre")
+Simulator.Wait(7)
+PacienteController.PlayAnimation("idle")
 Simulator.MoveCharacter("Paciente";"PathIrConsultorioDesdeCamilla")
 Simulator.Wait(3)
 PacienteController.MirarJugador(true)
@@ -125,10 +120,9 @@ El paciente se sienta en la camilla y luego se acuesta.
 {}
 <
 Simulator.Wait(2)
-PacienteController.MirarJugador(true)
-Simulator.Play("9-diagnostico")
 sillapaciente.PlayAnimation("sillaadelante")
 PacienteController.PlayAnimation("sentarse")
 Simulator.Wait(3)
+Simulator.Play("9-diagnostico")
 Simulator.CloseDialogueViewer()
 >

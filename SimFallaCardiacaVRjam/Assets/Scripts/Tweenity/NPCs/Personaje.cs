@@ -47,14 +47,17 @@ public class Personaje : MonoBehaviour
             case "acostarse":
                 anim.SetBool("acostarse", true);
                 anim.SetBool("idle", false);
+                anim.SetBool("sentarse", false);
                 break;
             case "sentarse":
                 anim.SetBool("sentarse", true);
                 anim.SetBool("saludar", false);
+                anim.SetBool("acostarse", false);
                 break;                  
             case "saludar":
                 anim.SetBool("saludar", true);
                 anim.SetBool("sentarse", false);
+                anim.SetBool("acostarse", false);
                 break;
             case "idle":
                 //Poner las animaciones en false
@@ -62,7 +65,7 @@ public class Personaje : MonoBehaviour
                 anim.SetBool("sentarse", false);
                 anim.SetBool("saludar", false);
                 anim.SetBool("acostarse", false);
-                delay = 500;
+                //delay = 500;
                 break;
         }
 
@@ -82,7 +85,7 @@ public class Personaje : MonoBehaviour
         switch (clipName)
         {
             case "acostarse":
-                delay = 1f;
+                delay = 2f;
                 break;
             case "sentarse":
                 delay = 1f;
