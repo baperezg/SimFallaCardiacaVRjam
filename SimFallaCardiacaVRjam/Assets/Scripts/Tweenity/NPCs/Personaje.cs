@@ -44,6 +44,10 @@ public class Personaje : MonoBehaviour
         
         switch (animationName)
         {
+            case "acostarse":
+                anim.SetBool("acostarse", true);
+                anim.SetBool("idle", false);
+                break;
             case "sentarse":
                 anim.SetBool("sentarse", true);
                 anim.SetBool("saludar", false);
@@ -57,6 +61,7 @@ public class Personaje : MonoBehaviour
                 // pueden crear su propio sistema también
                 anim.SetBool("sentarse", false);
                 anim.SetBool("saludar", false);
+                anim.SetBool("acostarse", false);
                 delay = 500;
                 break;
         }
@@ -76,6 +81,9 @@ public class Personaje : MonoBehaviour
         float delay = 0;
         switch (clipName)
         {
+            case "acostarse":
+                delay = 1f;
+                break;
             case "sentarse":
                 delay = 1f;
                 break;
